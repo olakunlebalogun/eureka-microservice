@@ -1,0 +1,16 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: Publisher
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:5000/eureka
+    fetch-registry: true
+    register-with-eureka: true
